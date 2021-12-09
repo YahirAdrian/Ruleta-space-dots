@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css/styles.css"/>
-        <title>Ruleta Space Dots</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ruleta de Space Dots</title>
     </head>
 
     <body>
+        <header>
+            <div class="titulo">
+                <h1>Space Dots</h1>    
+            </div>
+            <nav id="menu">
+                <a href="baraja.html">Baraja de cartas</a>
+            </nav>
+        </header>
+        
 
+        <section>
+            <h2>Ruleta del juego</h2>
+
+            <div id="ruleta">
+                <div id="apuntador"></div>
+                <div id="base"></div>
+                <img src="src/rueleta.png" alt="Ruleta del juego" title="Gira la ruleta" id="imagen-ruleta"/>
+            </div>
+
+
+            <div id="resultados">
+                <h2>Resultados</h2>
+                <img src="src/naves/rojo.png" alt="Imagen de resultado de la ruleta"/>
+                <p id="resultado">Nombre del jugador</p>
+            </div>
+        </section>
     </body>
-
 </html>
