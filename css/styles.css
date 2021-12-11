@@ -1,0 +1,152 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    background-image: url('../src/fondo.jpg');
+}
+
+header{
+    display: block;
+    height: 100px;
+    border-bottom: 2px dashed #e0e0e0;
+    padding: 0px 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #000, #222);
+}
+
+header h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+section h2{
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+}
+
+header a{
+    display: block;
+    color:  #fff;
+    font-size: 18px;
+    width: 100px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 35%;
+    grid-template-rows: 1fr;
+}
+
+#ruleta #apuntador{
+    width: 0;
+    height: 0;
+    border-left: 50px solid #8b0000;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    transform: rotate(90deg);
+    position: relative;
+    top: 25px;
+    z-index: 2;
+}
+
+#ruleta #base{
+    width: 40%;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #5d4949;
+    position: relative;
+    bottom: 10px;
+    z-index: 0;
+}
+
+#ruleta, #resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffc4;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+
+}
+
+#ruleta{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#ruleta img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+#ruleta img:hover, #ruleta button#girar:hover{
+    transform: scale(1.01);
+    animation: girarRuleta 1s ease; 
+}
+
+#ruleta button#girar{
+    background-color: #07a714;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s;
+    border: 2px solid #dfdfdf;
+    color: #222;
+}
+
+#ruleta button#girar:hover{
+    background-color: #0ccc1c;
+    
+}
+
+#resultados{
+    grid-row: 1;
+    grid-column: 2;
+    justify-content: flex-start;
+}
+
+#resultados #jugador{
+    width: 100px;
+    height: 100px;
+}
+
+#ruleta img{
+    border: 1px solid #000;
+}
+
+@keyframes girarRuleta{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(720);
+    }
+}
