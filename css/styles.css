@@ -98,14 +98,12 @@ section{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s;
+    transition: all ease-out 1.3s;
     z-index: 1;
 }
 
-#ruleta img:hover, #ruleta button#girar:hover{
+#ruleta button#girar:hover{
     transform: scale(1.01);
-    animation: girarRuleta 1s ease; 
 }
 
 #ruleta button#girar{
@@ -142,11 +140,3 @@ section{
     border: 1px solid #000;
 }
 
-@keyframes girarRuleta{
-    from{
-        transform: rotate(0);
-    }
-    to{
-        transform: rotate(720);
-    }
-}
