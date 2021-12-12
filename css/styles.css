@@ -77,7 +77,8 @@ section{
     z-index: 0;
 }
 
-#ruleta, #resultados{
+#ruleta, #resultados,
+#baraja, #carta-seleccionada{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -102,11 +103,13 @@ section{
     z-index: 1;
 }
 
-#ruleta button#girar:hover{
+#ruleta button#girar:hover,
+#carta-seleccionada img:hover{
     transform: scale(1.01);
 }
 
-#ruleta button#girar{
+#ruleta button#girar,
+#carta-seleccionada button#sacar-carta{
     background-color: #07a714;
     padding: 10px;
     border-radius: 5px;
@@ -120,7 +123,8 @@ section{
     color: #222;
 }
 
-#ruleta button#girar:hover{
+#ruleta button#girar:hover,
+#carta-seleccionada button#sacar-carta:hover{
     background-color: #0ccc1c;
     
 }
@@ -140,3 +144,77 @@ section{
     border: 1px solid #000;
 }
 
+/* Estilos de la baraja de cartas */
+#carta-seleccionada img,
+.carta{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+#cartas{
+    position: absolute;
+    width: 180px;
+    height: 240px;   
+    transform: translate(-40px, 50px); 
+}
+.carta{
+    width: 180px;
+    height: 240px;
+    background-color: #FEEE02;
+    border-radius: 20px;
+    border: 3px solid #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+#cartas .carta:nth-child(1){
+    transform: translate(10px, -40px);
+}
+#cartas .carta:nth-child(2){
+    
+    transform: translate(20px, -30px);
+}
+#cartas .carta:nth-child(3){
+    transform: translate(30px, -20px);
+    
+}
+#cartas .carta:nth-child(4){
+    transform: translate(40px, -10px);
+}
+
+.carta.rojo{
+    background-color: #FF3706;
+}
+.carta.azul{
+    background-color: #01C5ED;
+}
+.carta.amarillo{
+    background-color: #FEEE02;
+}
+.carta.verde{
+    background-color: #329D0F;
+}
+
+.carta .titulo{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.carta .leyenda{
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.carta img{
+    width: 90px;
+    height: 90px;
+}

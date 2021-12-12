@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Baraja de cartas de Space Dots</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="src/icono_cartas.png" type="image/x-icon">
     </head>
 
     <body>
@@ -29,12 +30,33 @@
                     <h3 id="pregunta">¿Lorem ipsum dolor sit amet consectetur adispisicing elit sed do eiusmod?</h3>
                 </div>
 
-                <button>Sacar otra carta</button>
+                <button id="sacar-carta">Sacar otra carta</button>
             </div>
 
 
             <div id="baraja">
-                <img src="src/cartas/impulso_verde.png" alt="Baraja de cartas" title="sacar una carta" id="baraja"/>
+                <div id="cartas">
+                    <div class="carta amarillo">
+                        <span class="titulo">Pregunta</span>
+                        <img src="src/pregunta.png" alt="icono-carta">
+                        <span class="leyenda">¿Lorem ipsum dolor sit amet consectetur?</span>
+                    </div>
+                    <div class="carta rojo">
+                        <span class="titulo">Pregunta</span>
+                        <img src="src/pregunta.png" alt="icono-carta">
+                        <span class="leyenda">¿Lorem ipsum dolor sit amet consectetur?</span>
+                    </div>
+                    <div class="carta azul">
+                        <span class="titulo">Pregunta</span>
+                        <img src="src/pregunta.png" alt="icono-carta">
+                        <span class="leyenda">¿Lorem ipsum dolor sit amet consectetur?</span>
+                    </div>
+                    <div class="carta verde">
+                        <span class="titulo">Pregunta</span>
+                        <img src="src/pregunta.png" alt="icono-carta">
+                        <span class="leyenda">¿Lorem ipsum dolor sit amet consectetur?</span>
+                    </div>
+                </div>
             </div>
         </section>
 
