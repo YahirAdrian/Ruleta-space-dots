@@ -25,40 +25,36 @@
 
         <section>
             <div id="carta-seleccionada">
-                <img src="src/cartas/alienigena_azul.png" alt="Carta seleccionada" title="Nombre de la carta"/>
-                <div id="carta-pregunta">
-                    <h3 id="pregunta">¿Lorem ipsum dolor sit amet consectetur adispisicing elit sed do eiusmod?</h3>
-                </div>
+                <div class="encapsulador">
+                    <div class="lienzo">
+                    </div>
+    
+                    <div class="respuestas">
+                        <h3>Opciones</h3>
+                        <ol type="a" id="opciones-respuestas-li">
 
-                <button id="sacar-carta">Sacar otra carta</button>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="opciones">
+                    <button id="sacar-carta">Sacar una carta</button>
+                    <button id="reiniciar-baraja">Reiniciar</button>
+                </div>
             </div>
-
-
+            
+            
             <div id="baraja">
-                <div id="cartas">
-                    <div class="carta amarillo">
-                        <span class="titulo">Pregunta</span>
-                        <img src="src/pregunta.png" alt="icono-carta">
-                        <span class="leyenda">¿Lorem ipsum dolor sit amet consectetur?</span>
-                    </div>
-                    <div class="carta rojo">
-                        <span class="titulo">Pregunta</span>
-                        <img src="src/pregunta.png" alt="icono-carta">
-                        <span class="leyenda">¿Lorem ipsum dolor sit amet consectetur?</span>
-                    </div>
-                    <div class="carta azul">
-                        <span class="titulo">Pregunta</span>
-                        <img src="src/pregunta.png" alt="icono-carta">
-                        <span class="leyenda">¿Lorem ipsum dolor sit amet consectetur?</span>
-                    </div>
-                    <div class="carta verde">
-                        <span class="titulo">Pregunta</span>
-                        <img src="src/pregunta.png" alt="icono-carta">
-                        <span class="leyenda">¿Lorem ipsum dolor sit amet consectetur?</span>
-                    </div>
+                <div id="cubierta">
+                    <span id="pregunta-oculta">?</span>
                 </div>
+                <div id="cartas">
+                    
+                </div>
+                
             </div>
         </section>
-
+        
+        <script src="js/app.js" type="module"></script>
     </body>
 </html>

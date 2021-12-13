@@ -108,23 +108,36 @@ section{
     transform: scale(1.01);
 }
 
+.opciones{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
 #ruleta button#girar,
-#carta-seleccionada button#sacar-carta{
+#carta-seleccionada button#sacar-carta,
+#reiniciar-baraja,
+#revolver-baraja{
     background-color: #07a714;
-    padding: 10px;
+    padding: 8px;
+    margin: 10px 20px;
     border-radius: 5px;
     margin-top: 50px;
     width: 50%;
     cursor: pointer;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     transition: all 0.3s;
     border: 2px solid #dfdfdf;
     color: #222;
 }
 
 #ruleta button#girar:hover,
-#carta-seleccionada button#sacar-carta:hover{
+#carta-seleccionada button#sacar-carta:hover,
+#reiniciar-baraja:hover,
+#revolver-baraja:hover{
     background-color: #0ccc1c;
     
 }
@@ -184,7 +197,7 @@ section{
     transform: translate(30px, -20px);
     
 }
-#cartas .carta:nth-child(4){
+#cartas .carta:nth-child(n+4){
     transform: translate(40px, -10px);
 }
 
@@ -217,4 +230,63 @@ section{
 .carta img{
     width: 90px;
     height: 90px;
+}
+
+#pregunta{
+    width: 75%;
+    text-align: center;
+    margin: 30px auto 0px auto;
+}
+.lienzo{
+    width: 180px;
+    height: 240px;
+}
+
+#cubierta{
+    background-color: #000000;
+    width: 170px;
+    height: 220px;
+    z-index: 3;
+    position: relative;
+    top: 80px;
+    left: 15px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+#cubierta #pregunta-oculta{
+    color: white;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.respuestas{
+    width: 400px;
+    height: 240px;
+    border-radius: 30px;
+    padding: 5px 30px;
+    margin: 0px 20px;
+}
+
+.encapsulador{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.numero-pregunta{
+    width: 30px;
+    height: 30px;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+
+#opciones-respuestas-li li{
+    font-size: 14px;
 }

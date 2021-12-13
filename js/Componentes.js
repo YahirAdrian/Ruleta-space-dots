@@ -6,7 +6,12 @@ export const componentesRuleta= {
 };
 
 export const componentesBaraja = {
-
+    botonSacarCarta: document.querySelector('#sacar-carta'),
+    botonReiniciarBaraja: document.querySelector('#reiniciar-baraja'),
+    cartaActual: document.querySelector('#carta-actual'),
+    baraja: document.querySelector('#cartas'),
+    pregunta: document.querySelector('#pregunta'),
+    lienzo: document.querySelector('.lienzo')
 };
 
 export const rutaImagenesNaves = {
@@ -16,4 +21,10 @@ export const rutaImagenesNaves = {
     naveRoja : 'src/naves/rojo.png',
     naveRosada : 'src/naves/rosado.png',
     naveVerde : 'src/naves/verde.png',
+}
+
+export const rutaImagenesComodines = {
+    alienigena: 'src/cartas/alienigena.png',
+    impulso: 'src/cartas/impulso.png',
+    meteoro: 'src/cartas/meteoro.png'
 }
