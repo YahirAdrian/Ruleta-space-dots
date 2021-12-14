@@ -20,6 +20,7 @@ import {componentesRuleta, componentesBaraja} from './Componentes.js';
     if(componentesBaraja.baraja){
         
         const baraja = new Baraja(cartas);
+        // console.log(cartas);
         baraja.crearBarajaHTML();
         //RESOLVER ESTA PARTE
         baraja.revolver();
