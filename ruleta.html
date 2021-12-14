@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ruleta de Space Dots</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="src/naves/rojo.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <div class="titulo">
+                <h1>Space Dots</h1>    
+            </div>
+            <nav id="menu">
+                <a href="baraja.html">Baraja de cartas</a>
+            </nav>
+        </header>
+        
+
+        <section>
+            
+            <div id="ruleta">
+                <h2>Ruleta del juego</h2>
+                <div id="apuntador"></div>
+                <img src="src/ruleta.png" alt="Ruleta del juego" title="Gira la ruleta" id="imagen-ruleta"/>
+                <div id="base"></div>
+                <button class="button" id="girar">Girar la ruleta</button>
+            </div>
+
+
+            <div id="resultados">
+                <h2>Resultado</h2>
+                <img src="src/pregunta.png" alt="Imagen de resultado de la ruleta" id="jugador"/>
+                <p id="nombre-jugador">Nombre del jugador</p>
+            </div>
+        </section>
+
+        <script src="js/app.js" type="module"></script>
+    </body>
+</html>

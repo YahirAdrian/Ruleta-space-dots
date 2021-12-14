@@ -290,3 +290,21 @@ section{
 #opciones-respuestas-li li{
     font-size: 14px;
 }
+
+.banner{
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+}
+#portada{
+    /* margin: 30px auto; */
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    width: 750px;
+    height: 450px;
+}
+
+.links a{
+    color: #FFF;
+    font-size: 20px;
+}
