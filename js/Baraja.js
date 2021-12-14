@@ -71,7 +71,7 @@ export default class Baraja{
                         leyenda.textContent = Carta.leyendas.meteoro;
                         break;
                         case 'Impulso':
-                        imagen.src = rutaImagenesComodines.meteoro;
+                        imagen.src = rutaImagenesComodines.impulso;
                         leyenda.textContent = Carta.leyendas.impulso;
                         break;
                         
