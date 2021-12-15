@@ -308,3 +308,55 @@ section{
     color: #FFF;
     font-size: 20px;
 }
+
+.github{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+}
+
+.github a{
+    font-size: 14px;
+    color: #000;
+    padding: 10px 20px;
+}
+
+.github img{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+#flotante{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: -50px;
+    left: -50px;
+    animation-name: volar;
+    animation-delay: 30s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    z-index: 2;
+}
+
+@keyframes volar {
+    from{
+        bottom: -10%;
+        left: -10%;
+    }
+
+    to{
+        bottom: 110%;
+        left: 110%;
+    }
+}

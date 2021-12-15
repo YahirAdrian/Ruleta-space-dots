@@ -227,9 +227,58 @@ export const cartas = [
         'Programa intermitente',
         'Programa de intervalo',
         'Proograma continuo'
-    ],40)
-
-
+    ],40),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Cuál es la montaña más alta del mundo?', [
+        'Everest',
+        'Nevado de Toluca',
+        'Kachenjunga'
+    ],41),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Cuál es el videojuego más vendido de la historia?', [
+        'Clash Royale',
+        'Minecraft',
+        'Super Smash Bros '
+    ],42),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Cuál es la consola de videojuegos más vendida de la historia?', [
+        'XBox',
+        'PlayStation 2',
+        'Nintento Switch'
+    ],43),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Cuantos corazones tiene un pulpo?', [
+        '10',
+        '2',
+        'No tiene corazon'
+    ],44),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Donde se queda lo que pasa en las Vegas? (Pregunta abierta)', [
+    ],45),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Cuál es el deporte más practicado del mundo?', [
+        'Futbol',
+        'Basketbol',
+        'Natación'
+    ],46),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Qué célebre compositor clásico era sordo?', [
+        'Bethoven',
+        'Mozart',
+        'Ninguna de las anteriores'
+    ],47),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Cuál es la moneda que se usa en japón?', [
+        'Yen',
+        'Dolar Japonés',
+        'Euro'
+    ],48),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿En que continente se encuentra Siria?', [
+        'Asia',
+        'America',
+        'Europa'
+    ],49),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], 'Menciona un felino que no sea gato', [
+    ],50),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Como se llama este gato?', [
+        '<img src="https://cdni.rbth.com/rbthmedia/images/2021.06/original/60c5350115e9f9152b1c4529.jpg" width="100px"/>'
+    ],51),
+    new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[3], '¿Como se llama este perro?', [
+        '<img src="https://i.redd.it/pws4qtk7x6461.jpg" width="100px"/>'
+    ],52),
+    
 
     //new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[0], '', [],4)
     //new Carta(opcionesCartas.TIPO_NORMAL, 'Pregunta', opcionesCartas.colores[0], '', [],4)
