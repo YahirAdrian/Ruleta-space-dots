@@ -1,7 +1,7 @@
 import Ruleta from './Ruleta.js';
 import Carta from './Carta.js';
 import Baraja from './Baraja.js';
-import { cartas } from './cartasAgregar.js';
+import { cartas } from './cartas-holismo.js';
 import {componentesRuleta, componentesBaraja} from './Componentes.js';
 
 (function(){
